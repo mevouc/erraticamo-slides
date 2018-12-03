@@ -1,11 +1,12 @@
 layout: true
 
-background-image: url(resources/camo-photoshop-8000px-transparent.png)
+background-image: url(resources/camo-8000px-transparent.png)
 background-size: 2000px, 2000px
 
 ---
 
-name: title
+background-color: #111111
+class: center, middle, white-text
 
 # Procedural Generation in C++ vs. Photoshop:
 ## Learn, Benchmark, and Prove Nothing
@@ -34,13 +35,26 @@ Meven 'mevouc' Courouble
 - Learned procedural generation
 - Lost my time
 
+---
+
+background-color: #111111
+class: center, middle, white-text
+
+# Learn
 
 ---
 
 background-color: #111111
 class: center, middle, white-text
 
-# Questions ?
+# ErratiCamo
+
+---
+
+background-color: #111111
+class: center, middle, white-text
+
+# Questions?
 
 ---
 
