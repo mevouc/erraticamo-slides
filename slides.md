@@ -11,11 +11,28 @@ class: center, middle, white-text
 # Procedural Generation in C++ vs. Photoshop:
 ## Learn, Benchmark, and Prove Nothing
 
--
-
 06/12/2018
 
 Meven 'mevouc' Courouble
+
+???
+
+# Learn
+## The project: ErratiCamo
+### Purpose: use Perlin noise to produce camo texture
+### Perlin noise
+### Treshold & layers
+### Color & tresholds tweaking
+
+# Benchmark
+## Time spent
+### Prepare & setup
+### Code / script
+## Run time
+## Ease to improve & customize
+
+# Prove nothing = Conclusion
+## Use tools made for what you want to do
 
 ---
 
