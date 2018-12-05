@@ -77,6 +77,11 @@ faire pour voir
 
 Découverte = Photoshop c'était super plus simple
 
+Plan :
+1. Le projet, présentation du cœur de la partie procédurale
+2. Comparer la version C++ avec la version Photoshop
+3. Pour finir : Essayer de conclure quelque chose de cette expérience
+
 ---
 
 background-color: #111111
@@ -159,6 +164,12 @@ background-image: url(resources/camo-4000px.png)
 background-size: 2000px, 2000px
 background-color: #111111
 
+???
+
+Le résultat final
+
+Montrer ce que j'ai dit avant, les différentes couches, couleurs
+
 ---
 
 name: Perlin
@@ -185,8 +196,19 @@ double perlin_noise(double x, double y);
 
 ???
 
+Bruit de gradient = courbe ou texture pseudo aléatoire
+
+Look plus proche du random de la nature. Choses aléatoires mais pas uniforme, y
+a une relation entre deux valeurs proches
+
+Exemple = altitude en montagne deux points éloignés d'une montage seront
+séparément aléatoires, rien en commun. Deux points proches auront seront plus
+proche, c'est la "pente" qui est aléatoire
+
 Je vais pas vous expliquer tout le détail de comment ça marche, y a des super
 vidéos avec des accents russes ou indiens pour l'expliquer mieux que moi.
+
+Vrai aléatoire pas utile pour faire du procédural, besoin de random plus "smooth"
 
 ---
 
@@ -199,6 +221,16 @@ template: Perlin
 Uniform random
 ]
 
+???
+
+Aléatoire uniforme, tous les points n'ont aucun rapport les uns avec les autres
+
+pas de "pente"
+
+pas de relation entre deux valeurs consécutives
+
+nouveau calcul de random à chaque évaluation
+
 ---
 
 template: Perlin
@@ -210,6 +242,20 @@ template: Perlin
 1D Perlin noise
 ]
 
+???
+
+Aléatoire de Perlin : gradient
+
+ressemble à une courbe / à la forme d'une montagne
+
+deux valeurs consécutives sont liées
+
+1 génération de tout l'espace au début puis chaque appel est fonction d'un input
+- 1 dimension = temps
+- 2 dimension = position (vue de l'esprit)
+
+Parler des exemples de code
+
 ---
 
 class: center, middle
@@ -218,13 +264,27 @@ class: center, middle
 
 2D Perlin noise
 
+???
+
+Vrai bruit de perlin
+
+motifs aléatoires de taille similaire
+
 ---
 
 class: center, middle
 
 <img src="resources/perlin-noise-octaves.png" height="550px"/>
 
-2D Perlin noise
+2D "fractal" Perlin noise
+
+???
+
+Bruit de perlin répété, réduit et ajouté à lui-même
+
+Look nuages / fumée
+
+celui-là utilisé dans le projet
 
 ---
 
@@ -234,6 +294,12 @@ class: center, middle
 
 2D Perlin noise binarized
 
+???
+
+étape suivante : binariser
+
+créer des "ilôts" (méthode aussi utilisé pour générer des cartes en 2D)
+
 ---
 
 class: center, middle
@@ -241,6 +307,14 @@ class: center, middle
 <img src="resources/camo-2000px.png" height="550px"/>
 
 Colorization & layering
+
+???
+
+répéter les étapes précédentes
+
+coloriser les tâches blanches, supprimer les noires
+
+superposer le tout
 
 ---
 
@@ -250,16 +324,21 @@ Colorization & layering
 
 - Can be run on any empty document
 
+.right-column[
 - TODO PHOTOSHOP SCRIPT SCREENSHOT
+]
 
----
+???
 
-# Tweaking
+Version photoshop fait la même chose mais utilise des filtres et outils du
+logiciel, rien recodé soit même
 
-- Change tresholds so layers do not cover the same surface
+Pour être réutilisable : scripté comme une séquence d'actions
 
-- Change colors to have camo-like look
+Montrer un peu la gueule d'un script Photoshop
 
+A demandé pas mal d'ajustements, pour avoir un bon résultat (binarization trop
+faible)
 
 ---
 
@@ -267,6 +346,22 @@ background-color: #111111
 class: center, middle, white-text
 
 # Benchmark
+
+???
+
+vous savez ce que fait le projet
+
+comme j'ai dit je l'ai fait 2 fois, une fois codé moi-même, une fois avec toshop
+
+"Et si je m'amusais à comparer formellement les deux *implems* ?"
+
+Ça sera marrant, mais inutile
+
+Unité de comparaison numéro 1 : le temps
+
+numéro 2 : l'apparence et la facilité d'utilisation
+
+maintenant on va comparer un  peu les deux
 
 ---
 
@@ -295,6 +390,18 @@ C++   | Photoshop
 ----- | ---------
 3,3 s | TODO
 ]
+
+???
+
+J'ai été assez exhaustif
+
+pour la partie implem, assez vague car rien de sûr
+
+Photoshop nettement plus rapides à mettre en place
+
+Pas de compilation sur Photoshop (no shit Shelock)
+
+Photoshop plus lent à s'éxécuter car rendu dans le logiciel à chaque action
 
 ---
 
@@ -367,6 +474,16 @@ class: center, middle, white-text
 
 meven.courouble@vouc.me
 
+???
+
+Si vous voulez jeter un œil au projet, ajouter une star, voici le GitHub
+
+Pour les slides, le deuxième, lisibles avec un navigateur Web
+
+En faisant Git log vous pourrez voir que j'ai fait mes slides au dernier moment
+
+Mon mail si vous voulez m'emmerder
+
 ---
 
 background-color: #111111
@@ -375,3 +492,7 @@ class: center, middle, white-text
 <img src="resources/shepard.jpg" width="550px">
 
 Platine
+
+???
+
+Place au conférencier suivant
