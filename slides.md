@@ -34,6 +34,8 @@ Meven 'mevouc' Courouble
 # Prove nothing = Conclusion
 ## Use tools made for what you want to do
 
+## Github link
+
 ---
 
 # Idea
@@ -51,6 +53,7 @@ Meven 'mevouc' Courouble
 - C++ project with OpenCV library (for the secont time)
 - Learned procedural generation
 - Lost my time
+- Did another version using Photoshop
 
 ---
 
@@ -65,6 +68,62 @@ background-color: #111111
 class: center, middle, white-text
 
 # ErratiCamo
+
+---
+
+# The project
+
+- Generate multi-layers camo textures
+
+.right[TODO IMAGE OF RESULT]
+
+---
+
+# Perlin noise
+
+- Gradient noise
+- Developed by Ken Perlin in 1983 (published in 1985)
+- Used in texture, world-maps, clouds generation
+
+---
+
+# Perlin noise
+
+TODO IMAGE OF RANDOM 1D NOISE
+TODO IMAGE OF 1D PERLIN NOISE
+
+---
+
+# Perlin noise
+
+TODO IMAGE OF 2D PERLIN NOISE
+
+---
+
+# Perlin noise
+
+TODO IMAGE OF 2D PERLIN NOISE WITH OCTAVES (cloud like)
+
+---
+
+# Binarize perlin noise
+
+TODO IMAGE OF PERLIN NOISE BINARIZED
+
+---
+
+# Layering
+
+TODO SUCCESIVE IMAGES OF LAYERED PERLIN NOISED BINARIZED
+
+---
+
+# Tweaking
+
+- Change tresholds so layers do not cover the same surface
+- Change colors to have camo-like look
+
+---
 
 ---
 
