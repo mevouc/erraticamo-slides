@@ -43,16 +43,21 @@ Meven 'mevouc' Courouble
 ### What I wanted
 
 - Learn Ruby
+
 - Play with a new image processing library
+
 - Do a side-project with procedural generation
 
 --
 
 ### What I actually did
 
-- C++ project with OpenCV library (for the secont time)
+- C++ project with OpenCV library (for the second time)
+
 - Learned procedural generation
+
 - Lost my time
+
 - Did another version using Photoshop
 
 ---
@@ -75,55 +80,141 @@ class: center, middle, white-text
 
 - Generate multi-layers camo textures
 
-.right[TODO IMAGE OF RESULT]
+- Made in C++ with OpenCV
+
+- [github.com/mevouc/erraticamo](https://github.com/mevouc/erraticamo)
+
+### Steps: 
+- Perlin noise
+
+- Binarization
+
+- Colorization
+
+- Layering
+
+---
+
+background-image: url(resources/camo-4000px.png)
+background-size: 2000px, 2000px
 
 ---
 
 # Perlin noise
 
 - Gradient noise
+
 - Developed by Ken Perlin in 1983 (published in 1985)
+
 - Used in texture, world-maps, clouds generation
 
 ---
 
-# Perlin noise
+class: center, middle
 
-TODO IMAGE OF RANDOM 1D NOISE
-TODO IMAGE OF 1D PERLIN NOISE
+<img src="resources/1D-random.png" height="270px"/>
 
----
-
-# Perlin noise
-
-TODO IMAGE OF 2D PERLIN NOISE
+Uniform random
 
 ---
 
-# Perlin noise
+class: center, middle
 
-TODO IMAGE OF 2D PERLIN NOISE WITH OCTAVES (cloud like)
+<img src="resources/1D-perlin-noise.png" height="270px"/>
 
----
-
-# Binarize perlin noise
-
-TODO IMAGE OF PERLIN NOISE BINARIZED
+1D Perlin noise
 
 ---
 
-# Layering
+class: center, middle
 
-TODO SUCCESIVE IMAGES OF LAYERED PERLIN NOISED BINARIZED
+<img src="resources/perlin-noise.png" height="550px"/>
+
+2D Perlin noise
+
+---
+
+class: center, middle
+
+<img src="resources/perlin-noise-octaves.png" height="550px"/>
+
+2D Perlin noise
+
+---
+
+class: center, middle
+
+<img src="resources/perlin-noise-treshold.png" height="550px"/>
+
+2D Perlin noise binarized
+
+---
+
+class: center, middle
+
+<img src="resources/camo-2000px.png" height="550px"/>
+
+Colorization & layering
+
+---
+
+# Photoshop version
+
+- Script of Photoshop actions
+
+- Can be run on any empty document
+
+- TODO PHOTOSHOP SCRIPT SCREENSHOT
 
 ---
 
 # Tweaking
 
 - Change tresholds so layers do not cover the same surface
+
 - Change colors to have camo-like look
 
+
 ---
+
+background-color: #111111
+class: center, middle, white-text
+
+# Benchmark
+
+---
+
+### Implementation time
+
+C++                      | Time spent | Photoshop    | Time spent
+------------------------ | ---------- | -----------  | ----------
+**Documentation**        | 2 h        | **Script**   | 1 h 30 min
+**Perlin noise PoC**     | 3 h        | **Tweaking** | 1 h
+**Coding the project**   | 5 h        |              |
+                         |            |              |
+**Total**                | 12 h       | **Total**    | 2 h 30 min
+
+.left-column[
+
+### Compile time
+
+C++    | Photoshop
+------ | ---------
+16,6 s | 0
+
+]
+
+.right-column[
+
+### Run time
+
+C++   | Photoshop
+----- | ---------
+3,3 s | TODO
+
+
+]
+
 
 ---
 
@@ -137,4 +228,6 @@ class: center, middle, white-text
 background-color: #111111
 class: center, middle, white-text
 
-<img src="resources/shepard.jpg" alt="Plating" width="600px">
+<img src="resources/shepard.jpg" width="550px">
+
+Platine

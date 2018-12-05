@@ -30,20 +30,42 @@
 
       li p { line-height: 1.25em; }
 
+      table {
+        border: 1px solid #222222;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td {
+        height: 30px;
+        text-align: left;
+        padding-left: 20px;
+        border-left: 1px solid #222222;
+        border-right: 1px solid #222222;
+      }
+
+      th {
+        border-left: 1px solid #DDDDDD;
+        border-right: 1px solid #DDDDDD;
+        height: 40px;
+        text-align: center;
+        background-color: #222222;
+        color: white;
+      }
+
       /* Two-column layout */
       .left-column {
-        color: #666;
-        width: 20%;
-        height: 92%;
+        width: 45%;
         float: left;
       }
-        .left-column h2:last-of-type, .left-column h3:last-child {
-          color: #000;
-        }
+
+      .left-column h2:last-of-type, .left-column h3:last-child {
+        color: #000;
+      }
+
       .right-column {
-        width: 75%;
+        width: 45%;
         float: right;
-        padding-top: 1em;
       }
     </style>
   </head>
