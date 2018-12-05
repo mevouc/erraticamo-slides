@@ -26,9 +26,19 @@
         color: white;
       }
 
-      .remark-code, .remark-inline-code { font-family: 'Oxygen Mono'; }
+      .remark-code, .remark-inline-code {
+        font-family: 'Oxygen Mono';
+      }
 
       li p { line-height: 1.25em; }
+
+      a {
+        color: #4242A0;
+      }
+
+      .bright a {
+        color: #9B9BFF;
+      }
 
       table {
         border: 1px solid #222222;
@@ -74,9 +84,10 @@
     </script>
     <script>
       var slideshow = remark.create({
-         sourceUrl: 'slides.md',
-         ratio: '16:9',
-         slideNumberFormat: '%current%',
+        sourceUrl: 'slides.md',
+        ratio: '16:9',
+//        slideNumberFormat: '%current%',
+        highlightStyle: 'ir-black',
         });
     </script>
   </body>
