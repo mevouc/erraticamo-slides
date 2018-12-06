@@ -469,7 +469,7 @@ class: center, middle, white-text
 .bright[
 [github.com/mevouc/erraticamo](https://github.com/mevouc/erraticamo)
 
-[github.com/mevouc/erraticamo-slides](https://github.com/mevouc/erraticamo-slides)
+[mevouc.github.io/erraticamo-slides](https://mevouc.github.io/erraticamo-slides/)
 ]
 
 meven.courouble@vouc.me
