@@ -21,11 +21,13 @@ Bonsoir,
 
 Je suis ...
 
+"Qui n'a jamais eu l'impression d'avoir perdu son temps sur un projet perso ?"
+
 Ce soir = parler d'un projet perso + raconter une histoire, expérience
 
 Pour certains : se souvenir d'expériences similaires
 
-Pour d'autres : des tips pour jour avec ce qui nous plait (projets perso)
+Pour d'autres : des tips pour vos projets perso + apprendre des bases de génération procédurale
 
 ---
 
