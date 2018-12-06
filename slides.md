@@ -318,14 +318,16 @@ superposer le tout
 
 ---
 
+.left-column[
 # Photoshop version
 
 - Script of Photoshop actions
 
 - Can be run on any empty document
+]
 
 .right-column[
-- TODO PHOTOSHOP SCRIPT SCREENSHOT
+<img src="resources/photoshop-actions.png" height="550px" style="padding-top: 20px"/>
 ]
 
 ???
@@ -388,7 +390,7 @@ C++    | Photoshop
 
 C++   | Photoshop
 ----- | ---------
-3,3 s | TODO
+3,3 s | 3,1 s
 ]
 
 ???
@@ -401,7 +403,7 @@ Photoshop nettement plus rapides à mettre en place
 
 Pas de compilation sur Photoshop (no shit Shelock)
 
-Photoshop plus lent à s'éxécuter car rendu dans le logiciel à chaque action
+Même rapidité d'éxecution, différence négligeable, ces nombres sont des moyennes entre plusieurs run
 
 ---
 
