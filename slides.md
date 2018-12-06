@@ -276,6 +276,32 @@ motifs aléatoires de taille similaire
 
 class: center, middle
 
+<img src="resources/perlin-noise-with-compute.png" height="550px"/>
+
+2D Perlin noise compute
+
+???
+
+taille des motifs dû à la façon dont c'est calculé : image transformée en quadrillage
+
+---
+
+class: center, middle
+
+<img src="resources/perlin-compute.png" height="550px"/>
+
+Pixel value compute
+
+???
+
+Chaque coin = 1 vecteur random
+
+couleur d'un point dans un carré = interpolation linéaire paramétré par les 4 vecteurs
+
+---
+
+class: center, middle
+
 <img src="resources/perlin-noise-octaves.png" height="550px"/>
 
 2D "fractal" Perlin noise
